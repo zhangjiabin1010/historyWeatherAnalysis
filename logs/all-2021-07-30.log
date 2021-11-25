@@ -1,0 +1,78 @@
+[2021-07-30 16:06:09,384] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 27884
+[2021-07-30 16:06:11,254] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 16:18:31,496] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /days_show/ HTTP/1.1" 200 27884
+[2021-07-30 16:18:32,810] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 16:18:42,552] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /months_show/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 192, in months_show
+    monthsData = getMonthData(data)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 119, in __init__
+    data['weather_date'] = pd.to_datetime(data['weather_date']).apply(lambda x: x.strftime("%Y-%m"))
+NameError: name 'pd' is not defined
+[2021-07-30 16:18:42,648] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /months_show/ HTTP/1.1" 500 74841
+[2021-07-30 16:18:43,597] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 16:19:46,296] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /months_show/ HTTP/1.1" 200 18945
+[2021-07-30 16:19:47,055] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 16:24:18,356] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /months_show/ HTTP/1.1" 200 19185
+[2021-07-30 16:24:19,231] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 35835
+[2021-07-30 16:48:38,846] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 35835
+[2021-07-30 16:48:40,395] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 35835
+[2021-07-30 16:58:29,395] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:01:14,605] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 27884
+[2021-07-30 17:01:15,715] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:01:31,258] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /months_show/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 224, in months_show
+    tenMonthWindBar = monthsData.tenMDWind()
+TypeError: 'Bar' object is not callable
+[2021-07-30 17:01:31,304] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /months_show/ HTTP/1.1" 500 70483
+[2021-07-30 17:01:32,203] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:01:36,191] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:01:37,522] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:01:42,916] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:01:43,700] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:01:45,473] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:01:46,421] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:02:52,620] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 27884
+[2021-07-30 17:02:53,808] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:02:56,981] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:02:57,993] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:02:59,488] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:03:00,356] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:03:10,271] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /month_show/ HTTP/1.1" 200 27884
+[2021-07-30 17:03:11,783] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:03:25,231] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /months_show/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 224, in months_show
+    tenMonthWindBar = monthsData.tenMDWind()
+TypeError: 'Bar' object is not callable
+[2021-07-30 17:03:25,263] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /months_show/ HTTP/1.1" 500 70354
+[2021-07-30 17:03:26,188] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:04:46,608] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /months_show/ HTTP/1.1" 200 26325
+[2021-07-30 17:04:47,611] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:04:51,261] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 27884
+[2021-07-30 17:04:52,620] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:04:54,324] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /months_show/ HTTP/1.1" 200 26325
+[2021-07-30 17:04:55,406] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:14:16,174] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:14:18,594] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884
+[2021-07-30 17:14:23,825] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /years_show/ HTTP/1.1" 200 26076
+[2021-07-30 17:14:25,200] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 27884

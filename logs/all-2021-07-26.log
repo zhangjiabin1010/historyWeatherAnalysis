@@ -1,0 +1,241 @@
+[2021-07-26 14:34:11,884] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 14:34:11,885] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 14:34:12,653] [base.py:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-26 14:34:12,654] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2018
+[2021-07-26 14:34:30,603] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 88
+[2021-07-26 14:57:50,078] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 14:57:50,080] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 14:57:58,686] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test HTTP/1.1" 301 0
+[2021-07-26 14:57:58,698] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 14:57:58,793] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99412
+[2021-07-26 15:00:53,793] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 15:00:53,862] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99547
+[2021-07-26 15:01:18,997] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 15:01:19,068] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99547
+[2021-07-26 15:01:21,518] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 15:01:21,578] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99547
+[2021-07-26 15:02:05,126] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 15:02:05,201] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99574
+[2021-07-26 15:02:07,054] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 23, in test
+    return HttpResponse(c.render_embed())
+  File "D:\Software\python\lib\site-packages\pyecharts\charts\base.py", line 74, in render_embed
+    return engine.render_embed(self, template_name, env, **kwargs)
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 81, in render_embed
+    template_name=template_name, chart=chart, **kwargs
+  File "D:\Software\python\lib\site-packages\pyecharts\render\engine.py", line 58, in render_chart_to_template
+    tpl = self.env.get_template(template_name)
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\Software\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Software\python\lib\site-packages\jinja2\loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: simple_chart.html
+[2021-07-26 15:02:07,112] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 99574
+[2021-07-26 15:02:35,776] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 15:02:35,777] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 15:04:13,708] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 5418
+[2021-07-26 16:22:21,369] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 16:22:21,371] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 16:22:22,035] [base.py:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-26 16:22:22,036] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2018
+[2021-07-26 16:22:26,530] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 35, in test
+    grid = Grid(height=720, width=1200)
+TypeError: __init__() got an unexpected keyword argument 'height'
+[2021-07-26 16:22:26,585] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 69651
+[2021-07-26 16:34:17,542] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 16:34:17,543] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 16:34:22,095] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 38, in test
+    return HttpResponse(grid.render_embed())
+AttributeError: 'str' object has no attribute 'render_embed'
+[2021-07-26 16:34:22,141] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 69009
+[2021-07-26 16:34:48,151] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 12897
+[2021-07-26 16:38:57,094] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 12595
+[2021-07-26 16:39:28,152] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 12595
+[2021-07-26 16:40:11,305] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 10910
+[2021-07-26 16:43:05,584] [base.py:152] [base:get_response] [WARNING]- Not Found: /
+[2021-07-26 16:43:05,586] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 1967
+[2021-07-26 16:43:10,022] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 25, in test
+    .set_global_opts(title_opts=opts.TitleOpts(title="Bar-基本示例", subtitle="我是副标题"),width="300px",height="300px")
+TypeError: set_global_opts() got an unexpected keyword argument 'width'
+[2021-07-26 16:43:10,084] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 69817
+[2021-07-26 16:44:09,736] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 25, in test
+    .set_global_opts(title_opts=opts.TitleOpts(title="Bar-基本示例", subtitle="我是副标题"))
+AttributeError: 'Bar' object has no attribute 'InitOpts'
+[2021-07-26 16:44:09,789] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 69550
+[2021-07-26 16:44:30,797] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Software\python\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Software\python\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Personal\Project\weatherAnalysis\weatherCrawler\dashboard.py", line 21, in test
+    Bar(width="300px", height="300px")
+TypeError: __init__() got an unexpected keyword argument 'width'
+[2021-07-26 16:44:30,846] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /test/ HTTP/1.1" 500 69583
+[2021-07-26 16:47:13,525] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 10910
+[2021-07-26 16:47:46,003] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /test/ HTTP/1.1" 200 11200
