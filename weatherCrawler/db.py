@@ -209,4 +209,4 @@ class connectMysql(PTConnectionPool):
         self.get_pool()
 
 
-db = connectMysql(username='root', passwd='beiwei1010', ip='59.110.115.32', port=3306,sid='weatherAnalysis', DB_MIN_CACHED=5)
+db = connectMysql(username='xxxxxxxx', passwd='xxxxxxxx', ip='xxxxxxxxxx', port=3306,sid='weatherAnalysis', DB_MIN_CACHED=5)
